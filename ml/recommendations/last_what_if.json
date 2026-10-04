@@ -1,0 +1,20 @@
+{
+  "query": "what_if",
+  "plant_id": 3,
+  "day_t": 12,
+  "baseline_predicted_fw_g": 47.06,
+  "counterfactual_predicted_fw_g": 69.89,
+  "delta_g": 22.83,
+  "changes": [
+    {
+      "feature": "nutrient_ec_us_cm_mean_wmean",
+      "name": "Nutrient EC (\u00b5S/cm)",
+      "from": 1550.518,
+      "requested": 2000.0,
+      "to": 2000.0,
+      "clamped_to_p05_p95": false
+    }
+  ],
+  "grower_summary": "If you apply the listed set-point changes (clamped to observed Trial 1 p05\u2013p95), model-predicted FW in 4d moves from 47.1 g to 69.9 g (\u0394 +22.8 g). Typical forecast error \u00b117 g.",
+  "disclaimer": "Decision-support only: recommendations are model counterfactuals within the observed Trial 1 range, not proven causal effects or automatic greenhouse control. Validate with controlled experiments before operational changes."
+}

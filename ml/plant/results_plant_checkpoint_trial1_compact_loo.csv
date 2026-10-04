@@ -1,0 +1,8 @@
+feature_set,model,split,n_features,n_rows,mae_g,rmse_g,r2,day_median_mae_g
+compact,MeanBaseline,loo,163,79,59.0937,70.8257,-0.025805,59.3004
+compact,Ridge,loo,163,79,5.8377,8.9189,0.983733,1.2316
+compact,ElasticNet,loo,163,79,6.0158,9.2332,0.982566,1.2048
+compact,SVR-RBF,loo,163,79,13.9818,24.4855,0.877397,12.4227
+compact,RandomForest,loo,163,79,5.4379,8.5260,0.985135,1.2128
+compact,GradBoost,loo,163,79,5.4000,8.1486,0.986422,2.3246
+compact,XGBoost,loo,163,79,5.5359,9.6150,0.981095,1.5249

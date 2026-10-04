@@ -1,0 +1,6 @@
+route,model,split,n_seeds,mae_g_mean,mae_g_sd,mae_g_mean_pm_sd,rmse_g_mean,rmse_g_sd,rmse_g_mean_pm_sd,r2_mean,r2_sd,r2_mean_pm_sd,mae_vs_persist_mean,mae_vs_persist_sd,mae_vs_persist_mean_pm_sd,canopy_mae_px_mean,canopy_mae_px_sd,canopy_mae_px_mean_pm_sd,consistency_mae_g_mean,consistency_mae_g_sd,consistency_mae_g_mean_pm_sd
+canopy_only,RandomForest,lodo_target_day,1,,,—,,,—,,,—,,,—,8420.400720825855,0.0,8420.40,,,—
+direct_fw,ElasticNet,lodo_target_day,1,21.355901773218505,0.0,21.36,30.082081833660624,0.0,30.08,0.8176248446361893,0.0,0.82,9.229392344428557,0.0,9.23,,,—,4.457374710674367,0.0,4.46
+grow_mean,GrowMean,lodo_target_day,1,27.349515247361364,0.0,27.35,30.207039609224868,0.0,30.21,0.8161065637003895,0.0,0.82,3.2357788702856993,0.0,3.24,,,—,,,—
+persist,Persist,lodo_target_day,1,30.585294117647063,0.0,30.59,40.103171174301096,0.0,40.10,0.6758788805992126,0.0,0.68,0.0,0.0,0.00,10135.649115896358,0.0,10135.65,,,—
+phenotype_bridge,ElasticNet←RandomForest,lodo_target_day,1,19.05186755888762,0.0,19.05,27.7010951666716,0.0,27.70,0.8453521891065752,0.0,0.85,11.533426558759444,0.0,11.53,8420.400720825855,0.0,8420.40,4.457374710674367,0.0,4.46

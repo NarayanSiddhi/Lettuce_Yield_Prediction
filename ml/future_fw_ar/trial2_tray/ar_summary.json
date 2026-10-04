@@ -1,0 +1,71 @@
+{
+  "trial": "trial2",
+  "unit": "tray",
+  "horizon_days": 4,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "n_pairs": 7,
+  "split": "LODO",
+  "headline_best_route": "ar_daily_roll4",
+  "headline_mae": "9.79 \u00b1 0.00",
+  "table": [
+    {
+      "trial": "trial2",
+      "unit": "tray",
+      "route": "ar_daily_roll4",
+      "mae_mean": 9.79482350401744,
+      "mae_sd": 0.0,
+      "rmse_mean": 11.78845430075468,
+      "rmse_sd": 0.0,
+      "r2_mean": 0.9564011877999399,
+      "r2_sd": 0.0,
+      "n_seeds": 5,
+      "mae_mean_pm_sd": "9.79 \u00b1 0.00"
+    },
+    {
+      "trial": "trial2",
+      "unit": "tray",
+      "route": "ar_delta_4d",
+      "mae_mean": 16.245860238983205,
+      "mae_sd": 0.0,
+      "rmse_mean": 20.29000938976087,
+      "rmse_sd": 0.0,
+      "r2_mean": 0.8708407765814403,
+      "r2_sd": 0.0,
+      "n_seeds": 5,
+      "mae_mean_pm_sd": "16.25 \u00b1 0.00"
+    },
+    {
+      "trial": "trial2",
+      "unit": "tray",
+      "route": "direct_level",
+      "mae_mean": 24.657466295012334,
+      "mae_sd": 0.0,
+      "rmse_mean": 34.426777002764496,
+      "rmse_sd": 0.0,
+      "r2_mean": 0.628162092890058,
+      "r2_sd": 0.0,
+      "n_seeds": 5,
+      "mae_mean_pm_sd": "24.66 \u00b1 0.00"
+    },
+    {
+      "trial": "trial2",
+      "unit": "tray",
+      "route": "persist",
+      "mae_mean": 25.014285714285716,
+      "mae_sd": 0.0,
+      "rmse_mean": 32.303493840229024,
+      "rmse_sd": 0.0,
+      "r2_mean": 0.672614136576527,
+      "r2_sd": 0.0,
+      "n_seeds": 5,
+      "mae_mean_pm_sd": "25.01 \u00b1 0.00"
+    }
+  ],
+  "caveat": "Tray LODO has only ~7 pairs \u2014 report with caution. Daily AR uses interpolated mid-weigh-in FW (secondary)."
+}

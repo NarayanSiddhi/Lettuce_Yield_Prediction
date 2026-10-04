@@ -1,0 +1,12 @@
+setup,n_rows,split,model,plant_mae_g,mae_g,r2,note
+image-only (8 tray medians),8,loo_8_medians,XGBoost,,42.0048,0.398585,existing result; file not modified
+compact (8 tray medians),8,loo_8_medians,GradBoost,,36.7224,0.492718,existing result; file not modified
+full (8 tray medians),8,loo_8_medians,XGBoost,,31.7057,0.64026,existing result; file not modified
+plant-level sensors,79,loo,XGBoost,3.3816,1.335,0.994842,loo=leave one plant-day out (optimistic); lodo=leave one harvest day out (fairer)
+plant-level sensors,79,lodo,XGBoost,23.5963,23.7431,0.754317,loo=leave one plant-day out (optimistic); lodo=leave one harvest day out (fairer)
+plant-level image,79,loo,GradBoost,5.3093,2.3868,0.986853,loo=leave one plant-day out (optimistic); lodo=leave one harvest day out (fairer)
+plant-level image,79,lodo,XGBoost,28.642,28.3196,0.67206,loo=leave one plant-day out (optimistic); lodo=leave one harvest day out (fairer)
+plant-level compact,79,loo,GradBoost,5.3705,2.5024,0.986536,loo=leave one plant-day out (optimistic); lodo=leave one harvest day out (fairer)
+plant-level compact,79,lodo,XGBoost,23.338,23.5688,0.75238,loo=leave one plant-day out (optimistic); lodo=leave one harvest day out (fairer)
+plant-level full,79,loo,GradBoost,5.3414,2.2917,0.986659,loo=leave one plant-day out (optimistic); lodo=leave one harvest day out (fairer)
+plant-level full,79,lodo,XGBoost,23.1539,23.2518,0.765922,loo=leave one plant-day out (optimistic); lodo=leave one harvest day out (fairer)

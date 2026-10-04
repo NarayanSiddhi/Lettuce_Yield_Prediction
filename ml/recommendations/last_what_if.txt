@@ -1,0 +1,22 @@
+
+════════════════════════════════════════════════════════════
+  WHAT-IF — pretend you change tent settings
+════════════════════════════════════════════════════════════
+  Plant ID          : 3   (day 12)
+  Prediction BEFORE : 47.1 g in 4 days
+  Prediction AFTER  : 69.9 g
+  Change in forecast: +22.8 g  (UP)
+
+  Settings you asked for:
+    • Nutrient EC (µS/cm): 1550.52 → 2000.00  (you typed 2000.0)
+
+  How to read this:
+    This is the MODEL's opinion if those settings had been true.
+    It is NOT proof that the real plant will gain exactly that many grams.
+    Keep ±17 g typical forecast error in mind.
+
+  In one sentence: If you apply the listed set-point changes (clamped to observed Trial 1 p05–p95), model-predicted FW in 4d moves from 47.1 g to 69.9 g (Δ +22.8 g). Typical forecast error ±17 g.
+
+────────────────────────────────────────────────────────────
+  NOTE: Decision support only — not automatic greenhouse control.
+────────────────────────────────────────────────────────────

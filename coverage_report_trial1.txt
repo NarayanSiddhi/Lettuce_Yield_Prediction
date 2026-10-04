@@ -1,0 +1,15 @@
+Coverage report — trial1
+  Timelapse calendar dates: 28
+  Dates with cup features:  20
+  Dates with img_n_cups>0:  20
+  Merged daily rows:        28
+
+Checkpoints (window_days_count):
+  day  0  2025-10-14  window=1  target=4.73 g
+  day  4  2025-10-18  window=4  target=13.08 g
+  day  8  2025-10-22  window=4  target=19.83 g
+  day 12  2025-10-26  window=4  target=27.28 g
+  day 16  2025-10-30  window=4  target=42.28 g
+  day 20  2025-11-03  window=4  target=80.78 g
+  day 24  2025-11-07  window=4  target=139.28 g
+  day 28  2025-11-11  window=3  target=218.28 g

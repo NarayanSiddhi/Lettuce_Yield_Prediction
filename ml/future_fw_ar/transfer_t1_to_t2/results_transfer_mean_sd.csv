@@ -1,0 +1,4 @@
+split,trial,unit,route,mae_mean,mae_sd,rmse_mean,rmse_sd,r2_mean,r2_sd,n_seeds,mae_mean_pm_sd
+train_T1_plant→test_T2_tray,trial2,tray,ar_delta_4d,16.41100823920836,0.0,18.09109480768735,0.0,0.8973188726357402,0.0,5,16.41 ± 0.00
+train_T1_plant→test_T2_tray,trial2,tray,persist,25.014285714285716,0.0,32.303493840229024,0.0,0.672614136576527,0.0,5,25.01 ± 0.00
+train_T1_plant→test_T2_tray,trial2,tray,direct_level,33.670319656575764,0.0,35.56321036698566,0.0,0.603208055596671,0.0,5,33.67 ± 0.00

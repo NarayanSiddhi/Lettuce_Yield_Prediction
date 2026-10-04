@@ -1,0 +1,14 @@
+level,trial,split,variant,setup,model,n_rows,mae_g,rmse_g,r2,n_features
+tray,trial2,holdout,compact,crop_only_holdout,physics,8,9.2000,12.4309,0.952135,0
+tray,trial2,holdout,compact,compact_raw_holdout,Ridge,8,54.4554,62.7899,-0.221203,153
+tray,trial2,holdout,compact,compact_hybrid_holdout,Ridge,8,7.9877,11.5127,0.958946,153
+tray,trial2,holdout,compact,compact_raw_holdout,ElasticNet,8,55.6620,64.1411,-0.274326,153
+tray,trial2,holdout,compact,compact_hybrid_holdout,ElasticNet,8,7.9169,11.5202,0.958892,153
+tray,trial2,holdout,compact,compact_raw_holdout,SVR-RBF,8,42.9495,62.9160,-0.226113,153
+tray,trial2,holdout,compact,compact_hybrid_holdout,SVR-RBF,8,9.7541,13.0601,0.947168,153
+tray,trial2,holdout,compact,compact_raw_holdout,RandomForest,8,45.8707,62.8116,-0.222048,153
+tray,trial2,holdout,compact,compact_hybrid_holdout,RandomForest,8,9.1532,12.5956,0.950859,153
+tray,trial2,holdout,compact,compact_raw_holdout,GradBoost,8,50.6581,67.1157,-0.395266,153
+tray,trial2,holdout,compact,compact_hybrid_holdout,GradBoost,8,8.9587,12.1798,0.954050,153
+tray,trial2,holdout,compact,compact_raw_holdout,XGBoost,8,3.7594,5.0222,0.992187,153
+tray,trial2,holdout,compact,compact_hybrid_holdout,XGBoost,8,8.7814,11.2278,0.960952,153

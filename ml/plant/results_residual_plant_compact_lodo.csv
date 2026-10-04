@@ -1,0 +1,15 @@
+level,trial,split,variant,setup,model,n_rows,mae_g,rmse_g,r2,n_features
+plant,trial1,lodo,compact,crop_only,physics,79,8.5609,11.3573,0.973623,0
+plant,trial1,lodo,compact,mean_baseline,mean,79,58.3456,69.9292,0.000000,0
+plant,trial1,lodo,compact,compact_raw,Ridge,79,50.2394,65.6204,0.119435,163
+plant,trial1,lodo,compact,compact_hybrid,Ridge,79,13.8067,19.4508,0.922633,163
+plant,trial1,lodo,compact,compact_raw,ElasticNet,79,49.7327,64.1191,0.159268,163
+plant,trial1,lodo,compact,compact_hybrid,ElasticNet,79,16.7532,25.2697,0.869418,163
+plant,trial1,lodo,compact,compact_raw,SVR-RBF,79,62.0339,75.8146,-0.175408,163
+plant,trial1,lodo,compact,compact_hybrid,SVR-RBF,79,9.6355,12.6761,0.967141,163
+plant,trial1,lodo,compact,compact_raw,RandomForest,79,36.6587,54.3920,0.395003,163
+plant,trial1,lodo,compact,compact_hybrid,RandomForest,79,8.9677,12.6552,0.967249,163
+plant,trial1,lodo,compact,compact_raw,GradBoost,79,32.7139,51.4496,0.458688,163
+plant,trial1,lodo,compact,compact_hybrid,GradBoost,79,9.5872,12.3040,0.969042,163
+plant,trial1,lodo,compact,compact_raw,XGBoost,79,24.9930,35.0695,0.748498,163
+plant,trial1,lodo,compact,compact_hybrid,XGBoost,79,11.5882,14.3302,0.958006,163

@@ -1,0 +1,26 @@
+
+════════════════════════════════════════════════════════════
+  WHEN WILL IT REACH THE TARGET WEIGHT?
+════════════════════════════════════════════════════════════
+  Plant ID             : 3   (day 12)
+  Weight today         : 32.8 g
+  Your goal            : 100 g
+  Model in +4d only     : 47.1 g
+
+  Is +4d enough historically?
+    Verdict : optimistic
+    Detail  : Needing +67 g in 4d is high vs usual growth (past p95 4-day gain ≈ +78 g). Treat 4-day hit as optimistic.
+
+  Estimated timeline under CURRENT-like settings:
+    ≈ 13.7 days from today  (around DAT 25.7)
+    Step-by-step model path:
+      day 12→16: 32.8 g → 49.5 g (+16.7 g)
+      day 16→20: 49.5 g → 71.2 g (+21.6 g)
+      day 20→24: 71.2 g → 92.7 g (+21.5 g)
+      day 24→28: 92.7 g → 109.8 g (+17.1 g)
+
+  In one sentence: Plant 3 is 32.8 g today (day 12). In 4d the model predicts 47.1 g. Under current-like settings, it is estimated to reach 100 g in about 13.7 days (≈ DAT 25.7).
+
+────────────────────────────────────────────────────────────
+  NOTE: Decision support only — not automatic greenhouse control.
+────────────────────────────────────────────────────────────

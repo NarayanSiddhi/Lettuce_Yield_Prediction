@@ -1,0 +1,166 @@
+% =============================================================================
+% Sections 2--4: Related Work, Segmentation Methods, Results & Selection
+% Include in your main document via: \input{paper/sections_segmentation}
+% =============================================================================
+
+\section{Related Work}
+\label{sec:related}
+
+\noindent
+Computer-vision pipelines for hydroponic lettuce monitoring commonly rely on an image
+segmentation step to extract canopy shape and size features for downstream biomass or fresh
+weight modelling~\cite{gao2022}. Classical vegetation-index methods (e.g., ExG/ExGR) provide a
+fast, training-free baseline for plant/background separation in controlled environments; Meyer
+and Neto~\cite{meyer2008} showed ExGR (ExG$-$ExR) can be effective for greenhouse imagery, and
+Otsu thresholding~\cite{otsu1979} is widely used to automate binarisation under variable
+illumination. Recently, foundation models enable zero-shot segmentation: SAM~\cite{kirillov2023}
+achieves strong general-purpose masks, while FastSAM~\cite{zhao2023fastsam} targets similar
+quality with lower latency. A greenhouse lettuce study reported SAM and FastSAM are comparable
+in accuracy but differ substantially in runtime~\cite{cornell2024}. Motivated by this, we
+compare ExGR+Otsu, SAM, and FastSAM on the same grow-tent timelapse frames under identical
+post-processing, and select one segmentation method for the yield-prediction pipeline.
+
+
+\section{Segmentation Methods}
+\label{sec:methods}
+
+We evaluate three methods that require no training on our dataset: (i) ExGR+Otsu thresholding,
+(ii) SAM zero-shot, and (iii) FastSAM zero-shot. Each method outputs candidate instance masks
+per image. For fair comparison, all masks are filtered with the same size limits and the same
+plant/pipe rejection heuristics (Section~\ref{sec:methods_postprocess}).
+
+\subsection{Method A: ExGR with Otsu Thresholding and Connected Components}
+\label{sec:methods_exgr}
+
+Given an RGB image, channels are normalised to $[0,1]$ and the Excess Green and Excess Red
+indices are computed as
+\begin{align}
+    \mathrm{ExG}  &= 2G' - R' - B', \\
+    \mathrm{ExR}  &= 1.4R' - B', \\
+    \mathrm{ExGR} &= \mathrm{ExG} - \mathrm{ExR}.
+    \label{eq:exgr}
+\end{align}
+The ExGR map is binarised using Otsu's threshold~\cite{otsu1979}, then refined using simple
+morphological operations. Connected components are treated as instances, and small blobs are
+discarded. This baseline is fast and training-free.
+
+\subsection{Method B: SAM (Segment Anything Model, Zero-Shot)}
+\label{sec:methods_sam}
+
+SAM is a promptable foundation model pre-trained on large-scale segmentation data.
+We use the Ultralytics implementation with the \texttt{sam\_b.pt} checkpoint in automatic
+mask-generation mode (no fine-tuning on our lettuce images), consistent with zero-shot
+protocols in recent agricultural phenotyping work~\cite{cornell2024}.
+For each full-resolution timelapse frame ($4056 \times 3040$ pixels), SAM proposes a set of
+instance masks; masks are resized to the image grid, thresholded at 0.5, and filtered by area
+(8{,}000--1{,}200{,}000 pixels).
+SAM is typically accurate but relatively slow for large batch processing~\cite{cornell2024}.
+
+\subsection{Method C: FastSAM (Fast Segment Anything Model)}
+\label{sec:methods_fastsam}
+
+FastSAM replaces SAM's transformer backbone with a faster CNN segmenter while retaining
+prompt-free, multi-instance behaviour~\cite{zhao2023fastsam}.
+We use the \textbf{FastSAM-x} checkpoint via Ultralytics with confidence 0.25, IoU 0.7, and
+\texttt{retina\_masks=True}.
+Inference resolution defaults to 1024\,px with automatic fallback to smaller sizes on GPU
+memory limits.
+FastSAM is designed for high-throughput settings where many regions must be segmented per
+frame.
+
+\subsection{Common Post-Processing and Feature Pathway}
+\label{sec:methods_postprocess}
+
+Regardless of segmentation method, each candidate mask undergoes the same validation:
+size filtering, HSV-based ``plant-colour'' checks, and spatial heuristics to reject common pipe
+regions. Accepted masks are saved as RGBA crops for feature extraction.
+
+\medskip
+
+For the \textbf{production yield pipeline}, only FastSAM outputs were carried forward at full
+scale through the following stages:
+\begin{enumerate}
+    \item \textbf{QA filtering} --- blur, colour, and size scoring of candidate crops;
+    \item \textbf{Cup assignment} --- $k$-means clustering on crop centroids ($\sim$14 cups per tray);
+    \item \textbf{Daily cup features} --- selection of the best crop per cup per calendar day;
+    \item \textbf{Checkpoint windows} --- aggregation over a four-day lookback before each harvest day;
+    \item \textbf{ML export} --- modelling tables under \texttt{ml/}.
+\end{enumerate}
+The primary modelling file is \texttt{checkpoint\_trial1\_image.csv}, containing eight labelled
+harvest checkpoints with image-derived window features and growth slopes; sensor features are
+merged in companion tables for combined models.
+
+
+\section{Segmentation Comparison and Selection for Yield Prediction}
+\label{sec:results_selection}
+
+\subsection{Experimental Protocol}
+\label{sec:protocol}
+
+We compared all three methods on \textbf{53 matched frames}: one representative image per
+trial-day (Trial~1 and Trial~2), selected at the hour closest to midday for consistent
+lighting.
+Each method segmented the same source files; runtime, mask counts, canopy coverage, and
+pairwise overlap were recorded.
+Dice and IoU are computed between methods on the union of accepted plant masks, measuring
+\emph{inter-method agreement} (not ground-truth accuracy).
+
+\subsection{Quantitative Results}
+\label{sec:quant_results}
+
+Table~\ref{tab:seg_comparison} summarises aggregate performance across 53 matched frames.
+FastSAM achieves the highest canopy coverage (12.9\%) with near-SAM plant-crop counts, while
+being about $3\times$ faster than SAM. ExGR is fastest but captures substantially less canopy.
+
+\begin{table}[t]
+    \centering
+    \caption{Segmentation comparison on 53 matched trial-day frames (aggregate means).}
+    \label{tab:seg_comparison}
+    \small
+    \resizebox{\columnwidth}{!}{%
+    \begin{tabular}{@{}lrrrrrr@{}}
+        \toprule
+        \textbf{Method} & \textbf{Time (s)} & \textbf{Raw} & \textbf{Crops} &
+        \textbf{Cov.} & \textbf{Colour} & \textbf{Score} \\
+        \midrule
+        \textbf{FastSAM}  & \textbf{1.53} & 32.0 & \textbf{21.0} & \textbf{0.129} & 0.641 & \textbf{0.747} \\
+        ExGR + Otsu       & \textbf{0.60} & 23.0 & 17.1 & 0.061 & \textbf{0.711} & 0.691 \\
+        SAM               & 4.55 & 31.6 & \textbf{21.7} & 0.112 & 0.671 & 0.663 \\
+        \bottomrule
+        \multicolumn{7}{@{}l@{}}{\footnotesize Score combines crop-count proximity, coverage, colour, and speed (details in code).} \\
+    \end{tabular}%
+    }
+\end{table}
+
+FastSAM and SAM agree more strongly with each other than either does with ExGR (mean Dice
+0.603 and IoU 0.452 for FastSAM vs.\ SAM on plant unions).
+
+At full timelapse scale, the FastSAM pipeline processed 821 frames, producing 16{,}980
+candidate crops; 3{,}637 (21.4\%) passed QA filtering; and 243 cup-day feature rows were
+obtained after cup assignment and daily aggregation.
+
+\subsection{Discussion and Method Selection}
+\label{sec:discussion_selection}
+
+ExGR is the fastest method and yields the highest per-mask plant-colour score, but its canopy
+coverage is roughly half that of FastSAM, and its overlap with both foundation models is poor
+($\mathrm{IoU} < 0.11$).
+This indicates that classical index thresholding alone is insufficient for our multi-cup
+grow-tent geometry.
+
+SAM achieves the highest raw plant-crop count and strong overlap with FastSAM, supporting the
+finding of Cornell~\cite{cornell2024} that the two models perform similarly on dense lettuce
+imagery.
+However, SAM requires approximately three times longer inference (4.55\,s vs.\ 1.53\,s per
+frame), which is prohibitive for batch processing of more than 800 timelapse images.
+
+\textbf{FastSAM} offers the best practical trade-off for our dataset: highest vegetation
+coverage (12.9\%), near-SAM plant counts, strong FastSAM--SAM agreement, and acceptable
+throughput. We therefore \textbf{selected FastSAM for downstream yield prediction}.
+
+\subsection{Link to the Yield-Modelling Pipeline}
+\label{sec:yield_pipeline}
+
+Segmentation outputs feed the yield study by (i) extracting daily per-cup image features, (ii)
+merging with daily sensors, and (iii) forming 4-day checkpoint windows aligned to harvest-day
+fresh-weight labels. Only FastSAM-derived feature tables are used for yield-model training.

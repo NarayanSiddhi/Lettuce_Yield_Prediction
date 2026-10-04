@@ -1,0 +1,66 @@
+{
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "n_pairs": 14,
+  "folds": {
+    "t1_to_t2": {
+      "persist": {
+        "model": "Persist",
+        "mae_g": "25.01 \u00b1 0.00",
+        "canopy_px": "95489.53 \u00b1 0.00"
+      },
+      "grow_mean": {
+        "model": "GrowMean",
+        "mae_g": "19.30 \u00b1 0.00",
+        "canopy_px": "\u2014"
+      },
+      "direct_fw": {
+        "model": "ElasticNet",
+        "mae_g": "11.72 \u00b1 0.00",
+        "canopy_px": "\u2014"
+      },
+      "phenotype_bridge": {
+        "model": "ElasticNet\u2190ElasticNet",
+        "mae_g": "15.04 \u00b1 0.00",
+        "canopy_px": "117825.31 \u00b1 0.00"
+      },
+      "canopy_only": {
+        "model": "ElasticNet",
+        "mae_g": "\u2014",
+        "canopy_px": "117825.31 \u00b1 0.00"
+      }
+    },
+    "t2_to_t1": {
+      "persist": {
+        "model": "Persist",
+        "mae_g": "30.73 \u00b1 0.00",
+        "canopy_px": "73034.95 \u00b1 0.00"
+      },
+      "grow_mean": {
+        "model": "GrowMean",
+        "mae_g": "23.56 \u00b1 0.00",
+        "canopy_px": "\u2014"
+      },
+      "direct_fw": {
+        "model": "ElasticNet",
+        "mae_g": "5.74 \u00b1 0.00",
+        "canopy_px": "\u2014"
+      },
+      "phenotype_bridge": {
+        "model": "ElasticNet\u2190XGBoost",
+        "mae_g": "6.46 \u00b1 0.05",
+        "canopy_px": "145823.84 \u00b1 7257.87"
+      },
+      "canopy_only": {
+        "model": "XGBoost",
+        "mae_g": "\u2014",
+        "canopy_px": "145823.84 \u00b1 7257.87"
+      }
+    }
+  }
+}

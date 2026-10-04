@@ -1,0 +1,16 @@
+trial,unit,seed,route,mae_g,rmse_g,r2,n_pairs,split,note
+trial2,tray,42,persist,25.014285714285716,32.303493840229024,0.672614136576527,7,train_T1_plant→test_T2_tray,transfer
+trial2,tray,42,direct_level,33.670319656575764,35.56321036698566,0.603208055596671,7,train_T1_plant→test_T2_tray,transfer
+trial2,tray,42,ar_delta_4d,16.41100823920836,18.09109480768735,0.8973188726357402,7,train_T1_plant→test_T2_tray,transfer
+trial2,tray,43,persist,25.014285714285716,32.303493840229024,0.672614136576527,7,train_T1_plant→test_T2_tray,transfer
+trial2,tray,43,direct_level,33.670319656575764,35.56321036698566,0.603208055596671,7,train_T1_plant→test_T2_tray,transfer
+trial2,tray,43,ar_delta_4d,16.41100823920836,18.09109480768735,0.8973188726357402,7,train_T1_plant→test_T2_tray,transfer
+trial2,tray,44,persist,25.014285714285716,32.303493840229024,0.672614136576527,7,train_T1_plant→test_T2_tray,transfer
+trial2,tray,44,direct_level,33.670319656575764,35.56321036698566,0.603208055596671,7,train_T1_plant→test_T2_tray,transfer
+trial2,tray,44,ar_delta_4d,16.41100823920836,18.09109480768735,0.8973188726357402,7,train_T1_plant→test_T2_tray,transfer
+trial2,tray,45,persist,25.014285714285716,32.303493840229024,0.672614136576527,7,train_T1_plant→test_T2_tray,transfer
+trial2,tray,45,direct_level,33.670319656575764,35.56321036698566,0.603208055596671,7,train_T1_plant→test_T2_tray,transfer
+trial2,tray,45,ar_delta_4d,16.41100823920836,18.09109480768735,0.8973188726357402,7,train_T1_plant→test_T2_tray,transfer
+trial2,tray,46,persist,25.014285714285716,32.303493840229024,0.672614136576527,7,train_T1_plant→test_T2_tray,transfer
+trial2,tray,46,direct_level,33.670319656575764,35.56321036698566,0.603208055596671,7,train_T1_plant→test_T2_tray,transfer
+trial2,tray,46,ar_delta_4d,16.41100823920836,18.09109480768735,0.8973188726357402,7,train_T1_plant→test_T2_tray,transfer

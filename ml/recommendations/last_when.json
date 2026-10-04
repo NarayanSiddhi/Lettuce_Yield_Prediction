@@ -1,0 +1,55 @@
+{
+  "query": "when_target",
+  "plant_id": 3,
+  "day_t": 12,
+  "target_fw_g": 100.0,
+  "current_fw_g": 32.78,
+  "predicted_fw_in_4d_g": 47.06,
+  "feasibility_for_4d": {
+    "level": "optimistic",
+    "gain_needed_from_today_g": 67.22,
+    "gap_after_model_4d_pred_g": 52.94,
+    "historical_4d_gain_p50_g": 15.5,
+    "historical_4d_gain_p95_g": 77.65,
+    "model_4d_close_within_error": false,
+    "message": "Needing +67 g in 4d is high vs usual growth (past p95 4-day gain \u2248 +78 g). Treat 4-day hit as optimistic."
+  },
+  "timeline_current_settings": {
+    "already_at_or_above": false,
+    "days_until_target": 13.7,
+    "reach_on_approx_dat": 25.7,
+    "path": [
+      {
+        "from_day": 12,
+        "to_day": 16,
+        "fw_start_g": 32.78,
+        "fw_pred_end_g": 49.51,
+        "gain_g": 16.73
+      },
+      {
+        "from_day": 16,
+        "to_day": 20,
+        "fw_start_g": 49.51,
+        "fw_pred_end_g": 71.16,
+        "gain_g": 21.64
+      },
+      {
+        "from_day": 20,
+        "to_day": 24,
+        "fw_start_g": 71.16,
+        "fw_pred_end_g": 92.67,
+        "gain_g": 21.52
+      },
+      {
+        "from_day": 24,
+        "to_day": 28,
+        "fw_start_g": 92.67,
+        "fw_pred_end_g": 109.82,
+        "gain_g": 17.15
+      }
+    ],
+    "reached": true
+  },
+  "grower_summary": "Plant 3 is 32.8 g today (day 12). In 4d the model predicts 47.1 g. Under current-like settings, it is estimated to reach 100 g in about 13.7 days (\u2248 DAT 25.7).",
+  "disclaimer": "Decision-support only: recommendations are model counterfactuals within the observed Trial 1 range, not proven causal effects or automatic greenhouse control. Validate with controlled experiments before operational changes."
+}

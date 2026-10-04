@@ -1,0 +1,13 @@
+feature,mae_increase_mean,mae_increase_sd,n_repeats,method
+fw_t,21.139348784504328,6.429559770258039,40,day_block
+gain_prev_4d,13.181738180418378,5.014104888008103,40,day_block
+exp_day_wmean,11.432038934516058,3.3698323959727197,40,day_block
+nutrient_ec_us_cm_mean_wmean,10.98491300255573,3.098011051246712,40,day_block
+env_night_air_temp_c_mean_wmean,7.574795202685887,3.0030815009598926,40,day_block
+env_day_air_temp_c_mean_wmean,4.86621815731327,1.868642113278121,40,day_block
+env_day_vpd_pa_mean_wmean,2.7563967638746183,1.0395997401238224,40,day_block
+env_day_humidity_pct_mean_wmean,1.8036512997081828,0.7142868343334536,40,day_block
+env_day_co2_ppm_mean_wmean,0.6630022200948635,0.3048330552711974,40,day_block
+env_night_humidity_pct_mean_wmean,0.037310546013668344,0.03677065711508522,40,day_block
+env_act_day_light_duration_s_sum_wmean,0.03385838318748078,0.031527899677450996,40,day_block
+env_night_vpd_pa_mean_wmean,0.014250794593769489,0.02179306752828842,40,day_block

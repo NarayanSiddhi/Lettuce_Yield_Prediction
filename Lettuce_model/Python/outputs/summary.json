@@ -1,0 +1,52 @@
+{
+  "trial1": {
+    "label": "Trial 1 - corrective adaptive EC steering",
+    "calibration": {
+      "canopy_efficiency": 1.4163802934133705,
+      "objective_log_mse": 0.06407992683775501,
+      "converged": true,
+      "n_checkpoints": 7,
+      "bounds": [
+        0.2,
+        6.0
+      ],
+      "at_bound": false,
+      "source": "least squares in log fresh weight"
+    },
+    "metrics": {
+      "n": 7,
+      "MAE_g": 9.385714285714284,
+      "RMSE_g": 10.944731283002925,
+      "MAPE_pct": 18.895942547057444,
+      "R2": 0.9762563649334781,
+      "bias_g": -0.7000000000000003,
+      "final_observed_g": 219.8,
+      "final_modelled_g": 201.4
+    }
+  },
+  "trial2": {
+    "label": "Trial 2 - preventive fixed EC",
+    "calibration": {
+      "canopy_efficiency": 0.9916884904655376,
+      "objective_log_mse": 0.0849773625387132,
+      "converged": true,
+      "n_checkpoints": 7,
+      "bounds": [
+        0.2,
+        6.0
+      ],
+      "at_bound": false,
+      "source": "least squares in log fresh weight"
+    },
+    "metrics": {
+      "n": 7,
+      "MAE_g": 10.485714285714286,
+      "RMSE_g": 13.288985772328257,
+      "MAPE_pct": 21.231232356390546,
+      "R2": 0.9445955558685777,
+      "bias_g": 2.1999999999999997,
+      "final_observed_g": 179.8,
+      "final_modelled_g": 150.9
+    }
+  }
+}

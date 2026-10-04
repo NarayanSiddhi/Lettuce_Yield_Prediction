@@ -1,0 +1,13 @@
+# Lettuce crop model -- Python dependencies
+#
+# Install with:   pip install -r requirements.txt
+#
+# Versions are lower bounds, not pins.  Nothing here uses a recent or unusual
+# API, so anything at or above these will work; if your environment already
+# has newer versions, leave them alone.
+
+numpy>=1.24          # array maths throughout
+pandas>=2.0          # driver tables and result frames
+scipy>=1.10          # scipy.optimize.minimize_scalar, used only by calibrate.py
+matplotlib>=3.7      # figures (optional -- the model runs without it)
+openpyxl>=3.1        # reads the .xlsx Mycodo exports in prepare_drivers.py

@@ -1,0 +1,8 @@
+{
+  "day_t": 12,
+  "n_plants": 10,
+  "lodo_mae_g": 17.25742373638391,
+  "target_fw": null,
+  "disclaimer": "Decision-support only: recommendations are model counterfactuals within the observed Trial 1 range, not proven causal effects or automatic greenhouse control. Validate with controlled experiments before operational changes.",
+  "csv": "/data/home/sai/Lettuce_Yield_Prediction/ml/recommendations/recommendations_day12.csv"
+}

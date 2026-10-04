@@ -1,0 +1,46 @@
+# Huge local media / capture (do not push)
+/Timelapse_growtent/
+/Timelapse_growtent_segmented/
+/crops/
+/Data collection/
+/segmentation/
+/Literature/
+/Literature_Review/
+/Sam_thesis/
+
+# Heavy ML image-forecast artifacts
+/ml/forecast_images/dataset/
+/ml/forecast_images/runs/
+/ml/forecast_images/runs_*/
+/ml/forecast_images/aim2_phase_b/
+/ml/forecast_images/aim2_phase_b_mask/
+/ml/forecast_images/aim2_phase_b_delta/
+
+# Model weights / checkpoints
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+# Python / tooling
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.cursor/
+
+# Logs
+*.log

@@ -1,0 +1,23 @@
+{
+  "horizon_days": 4,
+  "best": {
+    "plant/loo_plant": {
+      "variant": "sensors",
+      "model": "GradBoost",
+      "mae_g": 3.3472297639882562,
+      "r2": 0.9954061836804033,
+      "mae_vs_persist": 27.238064353658807,
+      "persist_mae_g": 30.585294117647063,
+      "n_rows": 68
+    },
+    "plant/lodo_target_day": {
+      "variant": "sensors",
+      "model": "ElasticNet",
+      "mae_g": 20.479341145808302,
+      "r2": 0.833023490837696,
+      "mae_vs_persist": 10.10595297183876,
+      "persist_mae_g": 30.585294117647063,
+      "n_rows": 68
+    }
+  }
+}

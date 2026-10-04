@@ -1,0 +1,31 @@
+
+════════════════════════════════════════════════════════════
+  PREDICT FUTURE WEIGHT (today known, future unknown)
+════════════════════════════════════════════════════════════
+  Plant ID             : 3   (day 12)
+  Weight today         : 32.8 g
+  Horizon              : +8 days
+  Target day (DAT)     : 20
+  Expected then        : 95.8 g
+  Likely range         : 83 – 109 g
+
+  Growth path:
+    day 12→13: 32.8 → 36.6 g
+    day 13→14: 36.6 → 42.0 g
+    day 14→15: 42.0 → 48.7 g
+    day 15→16: 48.7 → 56.2 g
+    day 16→17: 56.2 → 64.8 g
+    day 17→18: 64.8 → 74.4 g
+    day 18→19: 74.4 → 84.8 g
+    day 19→20: 84.8 → 95.8 g
+
+  What’s helping or slowing this plant:
+    ↓ slowing: Day air temperature (°C) (~7.0 g)  (adjustable)
+    ↑ helping: Night air temperature (°C) (~4.3 g)  (adjustable)
+    ↓ slowing: Prior 4-day weight gain (g) (~3.4 g)
+    ↓ slowing: Day VPD (Pa) (~2.5 g)  (adjustable)
+    ↓ slowing: Current fresh weight (g) (~2.0 g)
+
+  Summary: Plant 3 is 32.8 g on day 12. After 8 days (around day 20) it is expected around 95.8 g (rough range 83–109 g). Main reasons: Day air temperature (°C) is slowing growth by about 7.0 g (you can adjust this) and Night air temperature (°C) is helping growth by about 4.3 g (you can adjust this).
+
+────────────────────────────────────────────────────────────

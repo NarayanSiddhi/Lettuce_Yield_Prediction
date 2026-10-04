@@ -1,0 +1,15 @@
+level,trial,split,variant,setup,model,n_rows,mae_g,rmse_g,r2,n_features
+plant,trial1,loo,sensors,crop_only,physics,79,8.5609,11.3573,0.973623,0
+plant,trial1,loo,sensors,mean_baseline,mean,79,58.3456,69.9292,0.000000,0
+plant,trial1,loo,sensors,sensors_raw,Ridge,79,5.1166,7.9605,0.987041,219
+plant,trial1,loo,sensors,sensors_hybrid,Ridge,79,5.0928,7.9526,0.987067,219
+plant,trial1,loo,sensors,sensors_raw,ElasticNet,79,5.1542,8.0064,0.986891,219
+plant,trial1,loo,sensors,sensors_hybrid,ElasticNet,79,5.1505,8.0041,0.986899,219
+plant,trial1,loo,sensors,sensors_raw,SVR-RBF,79,11.8654,19.7251,0.920435,219
+plant,trial1,loo,sensors,sensors_hybrid,SVR-RBF,79,5.0590,7.7781,0.987628,219
+plant,trial1,loo,sensors,sensors_raw,RandomForest,79,4.9856,7.6554,0.988016,219
+plant,trial1,loo,sensors,sensors_hybrid,RandomForest,79,3.9590,6.3791,0.991679,219
+plant,trial1,loo,sensors,sensors_raw,GradBoost,79,3.9867,5.6969,0.993363,219
+plant,trial1,loo,sensors,sensors_hybrid,GradBoost,79,4.2219,6.0744,0.992455,219
+plant,trial1,loo,sensors,sensors_raw,XGBoost,79,3.7469,5.6828,0.993396,219
+plant,trial1,loo,sensors,sensors_hybrid,XGBoost,79,3.5412,5.2755,0.994309,219

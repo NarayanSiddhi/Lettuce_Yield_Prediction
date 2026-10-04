@@ -1,0 +1,9 @@
+{
+  "protocol": "Today tray median known; allocate to cups by canopy share; Trial1 AR-\u0394 per plant; mean plant pred vs tray median @ t+4.",
+  "secondary": "Blind image nowcast for fw_t (no tray today), then same AR.",
+  "mae_share_vs_tray_mean_pm_sd": "16.93 \u00b1 0.00",
+  "mae_nowcast_vs_tray_mean_pm_sd": "19.78 \u00b1 0.00",
+  "mae_persist_tray_mean_pm_sd": "25.01 \u00b1 0.00",
+  "n_intervals_per_seed": 7,
+  "caveat": "Per-plant truth on Trial 2 is unavailable; tray-median agreement is a proxy accuracy check. Cup images missing on some weigh-in days \u2192 nearest DAT within \u00b12 d."
+}

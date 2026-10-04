@@ -1,0 +1,40 @@
+{
+  "forecast_LODO": {
+    "mae_g_mean_pm_sd": "9.07 \u00b1 0.00",
+    "r2_mean": 0.9613328449866383,
+    "frac_within_17g_mean": 0.8382352941176471,
+    "n_pairs": 68,
+    "meaning": "How accurate are status/predict +4d weight forecasts vs real weigh-ins (Trial 1, leave-one-harvest-day-out).",
+    "accuracy_percentages": {
+      "approx_accuracy_vs_mean_weight_pct": 88.5,
+      "pct_predictions_within_10g": 67.6,
+      "pct_predictions_within_17g": 83.8,
+      "pct_predictions_within_20g": 86.8,
+      "pct_within_15pct_relative_error": 63.2,
+      "pct_within_20pct_relative_error": 75.0,
+      "mape_pct": 14.1,
+      "note": "Regression has no single official \"accuracy %\". approx_accuracy_vs_mean_weight = 100*(1 - MAE/mean true FW). Also report % of cases within an absolute/relative error band."
+    }
+  },
+  "days_to_target_calibration": {
+    "mae_days": 1.6029411764705883,
+    "median_abs_err_days": 0.7999999999999998,
+    "n_cases": 68,
+    "meaning": "At day t, ask when the plant will reach the weight later measured at t+4; compare predicted days vs actual 4 days. Measures timeline calibration.",
+    "pct_within_1_day": 69.1,
+    "pct_within_2_days": 83.8
+  },
+  "recommendation_consistency_model_internal": {
+    "frac_improved_toward_goal": 1.0,
+    "mean_goal_error_drop_g": 14.606250000000003,
+    "n_cases": 40,
+    "meaning": "Do suggested set-point tweaks move the *model prediction* closer to the goal than doing nothing? Consistency check \u2014 not a real greenhouse trial.",
+    "pct_improved_toward_goal": 100.0
+  },
+  "trial2_proxy_plant_mean_vs_tray": {
+    "mae_share_vs_tray": "16.93 \u00b1 0.00",
+    "mae_persist": "25.01 \u00b1 0.00",
+    "meaning": "Today tray median known; allocate to cups by canopy share; Trial1 AR-\u0394 per plant; mean plant pred vs tray median @ t+4."
+  },
+  "what_we_cannot_claim_yet": "We have not run controlled experiments that apply recommended EC/temp and re-weigh plants. Causal accuracy of recommendations needs a real A/B or before/after trial."
+}

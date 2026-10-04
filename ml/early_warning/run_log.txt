@@ -1,0 +1,273 @@
+Wrote /data/home/sai/Lettuce_Yield_Prediction/ml/early_warning/plant_early_warning_trial1_compact.csv (10 plants, 9 features)
+  [compact] regress Ridge: harvest MAE=7.47 g
+  [compact] regress ElasticNet: harvest MAE=10.22 g
+  [compact] regress SVR-RBF: harvest MAE=11.45 g
+  [compact] regress RandomForest: harvest MAE=6.32 g
+  [compact] regress GradBoost: harvest MAE=6.87 g
+  [compact] regress XGBoost: harvest MAE=6.77 g
+
+=== compact | 10% below target (≤ 204.3 g) | pos=2 neg=8 ===
+  clf DummyMostFrequent  acc=0.80 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.50
+  clf LogisticRegression acc=0.80 prec=0.50 rec=0.50 f1=0.50 bal=0.69 auc=0.75
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+  clf SVM-RBF            acc=0.70 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.12
+  clf RandomForest       acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.50
+  clf GradBoost          acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.50
+  clf XGBoost            acc=0.80 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.00
+  reg Ridge              acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.75
+  reg ElasticNet         acc=0.70 prec=0.33 rec=0.50 f1=0.40 bal=0.62 auc=0.88
+  reg SVR-RBF            acc=0.80 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.00
+  reg RandomForest       acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.69
+  reg GradBoost          acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.69
+  reg XGBoost            acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.88
+
+=== compact | 15% below target (≤ 192.9 g) | pos=1 neg=9 ===
+  clf DummyMostFrequent  acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.50
+  clf LogisticRegression acc=0.60 prec=0.00 rec=0.00 f1=nan bal=0.33 auc=0.00
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+  clf SVM-RBF            acc=0.80 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.00
+  clf RandomForest       acc=0.70 prec=0.00 rec=0.00 f1=nan bal=0.39 auc=0.00
+  clf GradBoost          acc=0.80 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.00
+  clf XGBoost            acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.00
+  reg Ridge              acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.44
+  reg ElasticNet         acc=0.80 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.67
+  reg SVR-RBF            acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.11
+  reg RandomForest       acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.33
+  reg GradBoost          acc=0.80 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.33
+  reg XGBoost            acc=0.80 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.67
+
+=== compact | 20% below target (≤ 181.6 g) | pos=0 neg=10 ===
+  reg Ridge              acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg ElasticNet         acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg SVR-RBF            acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg RandomForest       acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg GradBoost          acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg XGBoost            acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+Wrote /data/home/sai/Lettuce_Yield_Prediction/ml/early_warning/plant_early_warning_trial1_image.csv (10 plants, 9 features)
+  [image] regress Ridge: harvest MAE=7.47 g
+  [image] regress ElasticNet: harvest MAE=10.22 g
+  [image] regress SVR-RBF: harvest MAE=11.45 g
+  [image] regress RandomForest: harvest MAE=6.32 g
+  [image] regress GradBoost: harvest MAE=6.87 g
+  [image] regress XGBoost: harvest MAE=6.77 g
+
+=== image | 10% below target (≤ 204.3 g) | pos=2 neg=8 ===
+  clf DummyMostFrequent  acc=0.80 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.50
+  clf LogisticRegression acc=0.80 prec=0.50 rec=0.50 f1=0.50 bal=0.69 auc=0.75
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+  clf SVM-RBF            acc=0.70 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.12
+  clf RandomForest       acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.50
+  clf GradBoost          acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.50
+  clf XGBoost            acc=0.80 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.00
+  reg Ridge              acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.75
+  reg ElasticNet         acc=0.70 prec=0.33 rec=0.50 f1=0.40 bal=0.62 auc=0.88
+  reg SVR-RBF            acc=0.80 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.00
+  reg RandomForest       acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.69
+  reg GradBoost          acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.69
+  reg XGBoost            acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.88
+
+=== image | 15% below target (≤ 192.9 g) | pos=1 neg=9 ===
+  clf DummyMostFrequent  acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.50
+  clf LogisticRegression acc=0.60 prec=0.00 rec=0.00 f1=nan bal=0.33 auc=0.00
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+  clf SVM-RBF            acc=0.80 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.00
+  clf RandomForest       acc=0.70 prec=0.00 rec=0.00 f1=nan bal=0.39 auc=0.00
+  clf GradBoost          acc=0.80 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.00
+  clf XGBoost            acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.00
+  reg Ridge              acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.44
+  reg ElasticNet         acc=0.80 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.67
+  reg SVR-RBF            acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.11
+  reg RandomForest       acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.33
+  reg GradBoost          acc=0.80 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.33
+  reg XGBoost            acc=0.80 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.67
+
+=== image | 20% below target (≤ 181.6 g) | pos=0 neg=10 ===
+  reg Ridge              acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg ElasticNet         acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg SVR-RBF            acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg RandomForest       acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg GradBoost          acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg XGBoost            acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+Wrote /data/home/sai/Lettuce_Yield_Prediction/ml/early_warning/plant_early_warning_trial1_sensors.csv (10 plants, 8 features)
+  [sensors] regress Ridge: harvest MAE=6.95 g
+  [sensors] regress ElasticNet: harvest MAE=8.06 g
+  [sensors] regress SVR-RBF: harvest MAE=10.77 g
+  [sensors] regress RandomForest: harvest MAE=6.23 g
+  [sensors] regress GradBoost: harvest MAE=7.14 g
+  [sensors] regress XGBoost: harvest MAE=7.01 g
+
+=== sensors | 10% below target (≤ 204.3 g) | pos=2 neg=8 ===
+  clf DummyMostFrequent  acc=0.80 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.50
+  clf LogisticRegression acc=0.80 prec=0.50 rec=0.50 f1=0.50 bal=0.69 auc=0.75
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+  clf SVM-RBF            acc=0.70 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.12
+  clf RandomForest       acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.50
+  clf GradBoost          acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.50
+  clf XGBoost            acc=0.80 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.00
+  reg Ridge              acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.75
+  reg ElasticNet         acc=0.80 prec=0.50 rec=0.50 f1=0.50 bal=0.69 auc=0.81
+  reg SVR-RBF            acc=0.80 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.06
+  reg RandomForest       acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.69
+  reg GradBoost          acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.69
+  reg XGBoost            acc=0.90 prec=1.00 rec=0.50 f1=0.67 bal=0.75 auc=0.81
+
+=== sensors | 15% below target (≤ 192.9 g) | pos=1 neg=9 ===
+  clf DummyMostFrequent  acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.50
+  clf LogisticRegression acc=0.60 prec=0.00 rec=0.00 f1=nan bal=0.33 auc=0.00
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/data/home/sai/anaconda3/lib/python3.12/site-packages/sklearn/svm/_base.py:239: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+  clf SVM-RBF            acc=0.80 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.00
+  clf RandomForest       acc=0.70 prec=0.00 rec=0.00 f1=nan bal=0.39 auc=0.00
+  clf GradBoost          acc=0.80 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.00
+  clf XGBoost            acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.00
+  reg Ridge              acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.44
+  reg ElasticNet         acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.56
+  reg SVR-RBF            acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.22
+  reg RandomForest       acc=0.90 prec=nan rec=0.00 f1=nan bal=0.50 auc=0.33
+  reg GradBoost          acc=0.80 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.33
+  reg XGBoost            acc=0.80 prec=0.00 rec=0.00 f1=nan bal=0.44 auc=0.56
+
+=== sensors | 20% below target (≤ 181.6 g) | pos=0 neg=10 ===
+  reg Ridge              acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg ElasticNet         acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg SVR-RBF            acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg RandomForest       acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg GradBoost          acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+  reg XGBoost            acc=1.00 prec=nan rec=nan f1=nan bal=1.00 auc=nan
+
+Wrote /data/home/sai/Lettuce_Yield_Prediction/ml/early_warning/results_early_warning_comparison.csv
+Wrote /data/home/sai/Lettuce_Yield_Prediction/ml/early_warning/predictions_early_warning_loo.csv
+Traceback (most recent call last):
+  File "/data/home/sai/anaconda3/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'day'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/home/sai/Lettuce_Yield_Prediction/ml/train_early_warning.py", line 715, in <module>
+    run()
+  File "/data/home/sai/Lettuce_Yield_Prediction/ml/train_early_warning.py", line 686, in run
+    tray_rows = tray_shortfall_summary(TARGET_G * 0.8)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/sai/Lettuce_Yield_Prediction/ml/train_early_warning.py", line 466, in tray_shortfall_summary
+    r12 = fit[fit["day"] == 12].iloc[0]
+              ~~~^^^^^^^
+  File "/data/home/sai/anaconda3/lib/python3.12/site-packages/pandas/core/frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/home/sai/anaconda3/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'day'

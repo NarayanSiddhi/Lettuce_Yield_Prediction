@@ -1,0 +1,50 @@
+{
+  "split": "train_T1_plant\u2192test_T2_tray",
+  "n_train": 68,
+  "n_test": 7,
+  "table": [
+    {
+      "split": "train_T1_plant\u2192test_T2_tray",
+      "trial": "trial2",
+      "unit": "tray",
+      "route": "ar_delta_4d",
+      "mae_mean": 16.41100823920836,
+      "mae_sd": 0.0,
+      "rmse_mean": 18.09109480768735,
+      "rmse_sd": 0.0,
+      "r2_mean": 0.8973188726357402,
+      "r2_sd": 0.0,
+      "n_seeds": 5,
+      "mae_mean_pm_sd": "16.41 \u00b1 0.00"
+    },
+    {
+      "split": "train_T1_plant\u2192test_T2_tray",
+      "trial": "trial2",
+      "unit": "tray",
+      "route": "persist",
+      "mae_mean": 25.014285714285716,
+      "mae_sd": 0.0,
+      "rmse_mean": 32.303493840229024,
+      "rmse_sd": 0.0,
+      "r2_mean": 0.672614136576527,
+      "r2_sd": 0.0,
+      "n_seeds": 5,
+      "mae_mean_pm_sd": "25.01 \u00b1 0.00"
+    },
+    {
+      "split": "train_T1_plant\u2192test_T2_tray",
+      "trial": "trial2",
+      "unit": "tray",
+      "route": "direct_level",
+      "mae_mean": 33.670319656575764,
+      "mae_sd": 0.0,
+      "rmse_mean": 35.56321036698566,
+      "rmse_sd": 0.0,
+      "r2_mean": 0.603208055596671,
+      "r2_sd": 0.0,
+      "n_seeds": 5,
+      "mae_mean_pm_sd": "33.67 \u00b1 0.00"
+    }
+  ],
+  "caveat": "Trial 2 has tray-median FW only (no per-plant labels). This transfer test is the primary Trial-2 generalization check."
+}

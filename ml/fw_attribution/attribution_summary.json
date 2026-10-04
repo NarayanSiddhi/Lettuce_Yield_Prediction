@@ -1,0 +1,162 @@
+{
+  "seed": 42,
+  "tasks": {
+    "forecast": {
+      "task": "forecast",
+      "n": 68,
+      "n_features": 12,
+      "persist_mae_g": 30.585294117647063,
+      "top_row": [
+        {
+          "feature": "fw_t",
+          "mae_increase_mean": 20.597164297669455,
+          "mae_increase_sd": 1.3057183531522216,
+          "n_repeats": 30
+        },
+        {
+          "feature": "gain_prev_4d",
+          "mae_increase_mean": 13.513679556219946,
+          "mae_increase_sd": 1.0701049611216606,
+          "n_repeats": 30
+        },
+        {
+          "feature": "exp_day_wmean",
+          "mae_increase_mean": 11.665730201986426,
+          "mae_increase_sd": 0.9858239038668689,
+          "n_repeats": 30
+        },
+        {
+          "feature": "nutrient_ec_us_cm_mean_wmean",
+          "mae_increase_mean": 11.007841213729336,
+          "mae_increase_sd": 0.8531998398284932,
+          "n_repeats": 30
+        },
+        {
+          "feature": "env_night_air_temp_c_mean_wmean",
+          "mae_increase_mean": 7.683382276283861,
+          "mae_increase_sd": 0.7606400812257514,
+          "n_repeats": 30
+        },
+        {
+          "feature": "env_day_air_temp_c_mean_wmean",
+          "mae_increase_mean": 5.091295865199496,
+          "mae_increase_sd": 0.5207874785544634,
+          "n_repeats": 30
+        },
+        {
+          "feature": "env_day_vpd_pa_mean_wmean",
+          "mae_increase_mean": 2.8861313980200762,
+          "mae_increase_sd": 0.47473544249187943,
+          "n_repeats": 30
+        },
+        {
+          "feature": "env_day_humidity_pct_mean_wmean",
+          "mae_increase_mean": 1.7641113039767886,
+          "mae_increase_sd": 0.3374794802772863,
+          "n_repeats": 30
+        }
+      ],
+      "top_dayblock": [
+        {
+          "feature": "fw_t",
+          "mae_increase_mean": 21.139348784504328,
+          "mae_increase_sd": 6.429559770258039,
+          "n_repeats": 40,
+          "method": "day_block"
+        },
+        {
+          "feature": "gain_prev_4d",
+          "mae_increase_mean": 13.181738180418378,
+          "mae_increase_sd": 5.014104888008103,
+          "n_repeats": 40,
+          "method": "day_block"
+        },
+        {
+          "feature": "exp_day_wmean",
+          "mae_increase_mean": 11.432038934516058,
+          "mae_increase_sd": 3.3698323959727197,
+          "n_repeats": 40,
+          "method": "day_block"
+        },
+        {
+          "feature": "nutrient_ec_us_cm_mean_wmean",
+          "mae_increase_mean": 10.98491300255573,
+          "mae_increase_sd": 3.098011051246712,
+          "n_repeats": 40,
+          "method": "day_block"
+        },
+        {
+          "feature": "env_night_air_temp_c_mean_wmean",
+          "mae_increase_mean": 7.574795202685887,
+          "mae_increase_sd": 3.0030815009598926,
+          "n_repeats": 40,
+          "method": "day_block"
+        },
+        {
+          "feature": "env_day_air_temp_c_mean_wmean",
+          "mae_increase_mean": 4.86621815731327,
+          "mae_increase_sd": 1.868642113278121,
+          "n_repeats": 40,
+          "method": "day_block"
+        },
+        {
+          "feature": "env_day_vpd_pa_mean_wmean",
+          "mae_increase_mean": 2.7563967638746183,
+          "mae_increase_sd": 1.0395997401238224,
+          "n_repeats": 40,
+          "method": "day_block"
+        },
+        {
+          "feature": "env_day_humidity_pct_mean_wmean",
+          "mae_increase_mean": 1.8036512997081828,
+          "mae_increase_sd": 0.7142868343334536,
+          "n_repeats": 40,
+          "method": "day_block"
+        }
+      ],
+      "top_shap": [
+        {
+          "feature": "fw_t",
+          "mean_abs_shap": 18.50111372065279,
+          "method": "LinearExplainer"
+        },
+        {
+          "feature": "gain_prev_4d",
+          "mean_abs_shap": 13.523170780518882,
+          "method": "LinearExplainer"
+        },
+        {
+          "feature": "exp_day_wmean",
+          "mean_abs_shap": 10.954728139267235,
+          "method": "LinearExplainer"
+        },
+        {
+          "feature": "nutrient_ec_us_cm_mean_wmean",
+          "mean_abs_shap": 9.87270999861907,
+          "method": "LinearExplainer"
+        },
+        {
+          "feature": "env_night_air_temp_c_mean_wmean",
+          "mean_abs_shap": 8.570526885892477,
+          "method": "LinearExplainer"
+        },
+        {
+          "feature": "env_day_air_temp_c_mean_wmean",
+          "mean_abs_shap": 5.1077847069888795,
+          "method": "LinearExplainer"
+        },
+        {
+          "feature": "env_day_vpd_pa_mean_wmean",
+          "mean_abs_shap": 4.088102374461151,
+          "method": "LinearExplainer"
+        },
+        {
+          "feature": "env_day_humidity_pct_mean_wmean",
+          "mean_abs_shap": 3.0121925819791535,
+          "method": "LinearExplainer"
+        }
+      ],
+      "note": "Attribution is explanatory full-fit; predictive MAE remains LODO elsewhere."
+    }
+  }
+}

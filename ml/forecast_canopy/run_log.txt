@@ -1,0 +1,89 @@
+Cup pairs: 121 rows, 17 features
+  [cup/loo_cup] Persist      MAE=5222.9  R²=0.694
+  [cup/loo_cup] GrowMean     MAE=5359.6  R²=0.690
+  [cup/loo_cup] Ridge        MAE=4945.1  R²=0.710  (vs persist +277.8)
+  [cup/loo_cup] ElasticNet   MAE=4954.9  R²=0.709  (vs persist +268.0)
+  [cup/loo_cup] SVR-RBF      MAE=8326.5  R²=-0.048  (vs persist -3103.6)
+  [cup/loo_cup] RandomForest MAE=4192.6  R²=0.793  (vs persist +1030.3)
+  [cup/loo_cup] GradBoost    MAE=4237.0  R²=0.797  (vs persist +985.8)
+  [cup/loo_cup] XGBoost      MAE=4662.3  R²=0.669  (vs persist +560.6)
+  [cup/loo_trial] Persist      MAE=5222.9  R²=0.694
+  [cup/loo_trial] GrowMean     MAE=7110.0  R²=0.506
+  [cup/loo_trial] Ridge        MAE=27288.9  R²=-5.556  (vs persist -22066.0)
+  [cup/loo_trial] ElasticNet   MAE=40974.5  R²=-14.371  (vs persist -35751.6)
+  [cup/loo_trial] SVR-RBF      MAE=9620.0  R²=-0.264  (vs persist -4397.1)
+  [cup/loo_trial] RandomForest MAE=6785.0  R²=0.547  (vs persist -1562.2)
+  [cup/loo_trial] GradBoost    MAE=6260.8  R²=0.581  (vs persist -1037.9)
+  [cup/loo_trial] XGBoost      MAE=7260.9  R²=0.246  (vs persist -2038.0)
+  [cup/lodo_target_day] Persist      MAE=5222.9  R²=0.694
+  [cup/lodo_target_day] GrowMean     MAE=5385.3  R²=0.686
+  [cup/lodo_target_day] Ridge        MAE=4402.1  R²=0.786  (vs persist +820.8)
+  [cup/lodo_target_day] ElasticNet   MAE=4422.6  R²=0.789  (vs persist +800.3)
+  [cup/lodo_target_day] SVR-RBF      MAE=8362.9  R²=-0.044  (vs persist -3140.0)
+  [cup/lodo_target_day] RandomForest MAE=4012.0  R²=0.812  (vs persist +1210.9)
+  [cup/lodo_target_day] GradBoost    MAE=4129.3  R²=0.806  (vs persist +1093.5)
+  [cup/lodo_target_day] XGBoost      MAE=4308.9  R²=0.757  (vs persist +914.0)
+Tray daily pairs: 25 rows, 17 features
+  [tray/loo_trial] Persist      MAE=102582.6  R²=-0.834
+  [tray/loo_trial] GrowMean     MAE=113790.9  R²=-1.220
+  [tray/loo_trial] Ridge        MAE=136764.3  R²=-3.098  (vs persist -34181.6)
+  [tray/loo_trial] ElasticNet   MAE=321503.1  R²=-25.780  (vs persist -218920.4)
+  [tray/loo_trial] SVR-RBF      MAE=72203.3  R²=-0.161  (vs persist +30379.3)
+  [tray/loo_trial] RandomForest MAE=79938.3  R²=-0.068  (vs persist +22644.3)
+  [tray/loo_trial] GradBoost    MAE=86566.8  R²=-0.232  (vs persist +16015.9)
+  [tray/loo_trial] XGBoost      MAE=99530.7  R²=-0.558  (vs persist +3051.9)
+  [tray/lodo_target_day] Persist      MAE=102582.6  R²=-0.834
+  [tray/lodo_target_day] GrowMean     MAE=106630.6  R²=-1.001
+  [tray/lodo_target_day] Ridge        MAE=82229.8  R²=-0.193  (vs persist +20352.8)
+  [tray/lodo_target_day] ElasticNet   MAE=101180.0  R²=-0.710  (vs persist +1402.6)
+  [tray/lodo_target_day] SVR-RBF      MAE=74105.0  R²=-0.164  (vs persist +28477.6)
+  [tray/lodo_target_day] RandomForest MAE=80526.6  R²=-0.212  (vs persist +22056.0)
+  [tray/lodo_target_day] GradBoost    MAE=89752.1  R²=-0.438  (vs persist +12830.6)
+  [tray/lodo_target_day] XGBoost      MAE=89002.6  R²=-0.417  (vs persist +13580.1)
+Wrote /data/home/sai/Lettuce_Yield_Prediction/ml/forecast_canopy/results_canopy_forecast.csv
+Wrote /data/home/sai/Lettuce_Yield_Prediction/ml/forecast_canopy/predictions_canopy_forecast.csv
+{
+  "horizon_days": 4,
+  "best": {
+    "cup/loo_cup": {
+      "model": "RandomForest",
+      "mae": 4192.600854397517,
+      "r2": 0.7925622031649304,
+      "mae_vs_persist": 1030.2586497347147,
+      "persist_mae": 5222.859504132231,
+      "n_rows": 121
+    },
+    "cup/loo_trial": {
+      "model": "GradBoost",
+      "mae": 6260.778028625126,
+      "r2": 0.5807323894951275,
+      "mae_vs_persist": -1037.918524492895,
+      "persist_mae": 5222.859504132231,
+      "n_rows": 121
+    },
+    "cup/lodo_target_day": {
+      "model": "RandomForest",
+      "mae": 4011.95776809865,
+      "r2": 0.8119418449034294,
+      "mae_vs_persist": 1210.9017360335815,
+      "persist_mae": 5222.859504132231,
+      "n_rows": 121
+    },
+    "tray/loo_trial": {
+      "model": "SVR-RBF",
+      "mae": 72203.2936630383,
+      "r2": -0.16064530886246997,
+      "mae_vs_persist": 30379.346336961695,
+      "persist_mae": 102582.64,
+      "n_rows": 25
+    },
+    "tray/lodo_target_day": {
+      "model": "SVR-RBF",
+      "mae": 74105.0462097634,
+      "r2": -0.16377785429624137,
+      "mae_vs_persist": 28477.5937902366,
+      "persist_mae": 102582.64,
+      "n_rows": 25
+    }
+  }
+}

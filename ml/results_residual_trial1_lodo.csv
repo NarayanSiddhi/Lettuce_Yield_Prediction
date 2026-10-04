@@ -1,0 +1,15 @@
+trial,split,setup,model,mae_g,rmse_g,r2,n_features
+trial1,lodo,crop_only,physics,8.2375,10.2381,0.979010,0
+trial1,lodo,mean_baseline,mean,58.6844,70.6671,0.000000,0
+trial1,lodo,image_raw,Ridge,44.4097,51.8865,0.460894,66
+trial1,lodo,hybrid_residual,Ridge,19.1450,21.0987,0.910859,66
+trial1,lodo,image_raw,ElasticNet,39.4687,48.1876,0.535019,66
+trial1,lodo,hybrid_residual,ElasticNet,21.1409,23.3004,0.891284,66
+trial1,lodo,image_raw,SVR-RBF,56.6428,80.0181,-0.282159,66
+trial1,lodo,hybrid_residual,SVR-RBF,9.4420,11.3619,0.974150,66
+trial1,lodo,image_raw,RandomForest,53.4387,67.6060,0.084758,66
+trial1,lodo,hybrid_residual,RandomForest,9.7675,13.0625,0.965832,66
+trial1,lodo,image_raw,GradBoost,40.3736,55.7041,0.378645,66
+trial1,lodo,hybrid_residual,GradBoost,11.2638,15.4822,0.952001,66
+trial1,lodo,image_raw,XGBoost,37.2293,48.9686,0.519824,66
+trial1,lodo,hybrid_residual,XGBoost,10.3205,14.7684,0.956325,66

@@ -1,0 +1,173 @@
+{
+  "query": "status",
+  "plant_id": 3,
+  "day_t": 12,
+  "day_future": 17,
+  "horizon_days": 5,
+  "roll_mode": "daily_ar",
+  "current_fw_g": 32.78,
+  "predicted_fw_future_g": 64.79,
+  "observed_fw_future_g": null,
+  "path": [
+    {
+      "from_day": 12,
+      "to_day": 13,
+      "fw_start_g": 32.78,
+      "fw_pred_end_g": 36.62,
+      "gain_g": 3.84
+    },
+    {
+      "from_day": 13,
+      "to_day": 14,
+      "fw_start_g": 36.62,
+      "fw_pred_end_g": 42.02,
+      "gain_g": 5.4
+    },
+    {
+      "from_day": 14,
+      "to_day": 15,
+      "fw_start_g": 42.02,
+      "fw_pred_end_g": 48.7,
+      "gain_g": 6.68
+    },
+    {
+      "from_day": 15,
+      "to_day": 16,
+      "fw_start_g": 48.7,
+      "fw_pred_end_g": 56.19,
+      "gain_g": 7.49
+    },
+    {
+      "from_day": 16,
+      "to_day": 17,
+      "fw_start_g": 56.19,
+      "fw_pred_end_g": 64.79,
+      "gain_g": 8.6
+    }
+  ],
+  "uncertainty_band_g": {
+    "approx_mae_lodo": 10.14,
+    "low": 54.65,
+    "high": 74.93,
+    "note": "\u00b1 LODO MAE\u00d7\u221a(horizon/4); not a formal CI"
+  },
+  "top_actionable_drivers": [
+    {
+      "feature": "nutrient_ec_us_cm_mean_wmean",
+      "name": "Nutrient EC (\u00b5S/cm)",
+      "coef": 4.938076475643902,
+      "abs_coef": 4.938076475643902,
+      "actionable": true
+    },
+    {
+      "feature": "env_night_air_temp_c_mean_wmean",
+      "name": "Night air temperature (\u00b0C)",
+      "coef": -4.515751691355909,
+      "abs_coef": 4.515751691355909,
+      "actionable": true
+    },
+    {
+      "feature": "env_day_vpd_pa_mean_wmean",
+      "name": "Day VPD (Pa)",
+      "coef": 4.073656391579735,
+      "abs_coef": 4.073656391579735,
+      "actionable": true
+    },
+    {
+      "feature": "env_day_air_temp_c_mean_wmean",
+      "name": "Day air temperature (\u00b0C)",
+      "coef": 3.52308700738817,
+      "abs_coef": 3.52308700738817,
+      "actionable": true
+    },
+    {
+      "feature": "env_day_humidity_pct_mean_wmean",
+      "name": "Day humidity (%)",
+      "coef": -3.233294750959549,
+      "abs_coef": 3.233294750959549,
+      "actionable": true
+    }
+  ],
+  "strong_context_drivers": [
+    {
+      "feature": "fw_t",
+      "name": "Current fresh weight (g)",
+      "coef": 5.991905085971309,
+      "abs_coef": 5.991905085971309,
+      "actionable": false
+    },
+    {
+      "feature": "exp_day_wmean",
+      "name": "Days into grow cycle",
+      "coef": 5.763188726532069,
+      "abs_coef": 5.763188726532069,
+      "actionable": false
+    },
+    {
+      "feature": "gain_prev_4d",
+      "name": "Prior 4-day weight gain (g)",
+      "coef": 4.937858688604034,
+      "abs_coef": 4.937858688604034,
+      "actionable": false
+    }
+  ],
+  "shap_local": [
+    {
+      "feature": "env_day_air_temp_c_mean_wmean",
+      "name": "Day air temperature (\u00b0C)",
+      "shap_g": -6.97,
+      "value": 22.271,
+      "actionable": true,
+      "pushes": "down",
+      "method": "LinearExplainer"
+    },
+    {
+      "feature": "env_night_air_temp_c_mean_wmean",
+      "name": "Night air temperature (\u00b0C)",
+      "shap_g": 4.28,
+      "value": 20.752,
+      "actionable": true,
+      "pushes": "up",
+      "method": "LinearExplainer"
+    },
+    {
+      "feature": "gain_prev_4d",
+      "name": "Prior 4-day weight gain (g)",
+      "shap_g": -3.43,
+      "value": 8.8,
+      "actionable": false,
+      "pushes": "down",
+      "method": "LinearExplainer"
+    },
+    {
+      "feature": "env_day_vpd_pa_mean_wmean",
+      "name": "Day VPD (Pa)",
+      "shap_g": -2.55,
+      "value": 1109.178,
+      "actionable": true,
+      "pushes": "down",
+      "method": "LinearExplainer"
+    },
+    {
+      "feature": "fw_t",
+      "name": "Current fresh weight (g)",
+      "shap_g": -2.01,
+      "value": 32.78,
+      "actionable": false,
+      "pushes": "down",
+      "method": "LinearExplainer"
+    },
+    {
+      "feature": "env_day_humidity_pct_mean_wmean",
+      "name": "Day humidity (%)",
+      "shap_g": -1.11,
+      "value": 58.648,
+      "actionable": true,
+      "pushes": "down",
+      "method": "LinearExplainer"
+    }
+  ],
+  "shap_method": "LinearExplainer",
+  "grower_summary": "Plant 3 weighs 32.8 g today (day 12). In about 5 days (day 17) it is expected around 64.8 g. Main reasons: Day air temperature (\u00b0C) is slowing growth by about 7.0 g (you can adjust this), Night air temperature (\u00b0C) is helping growth by about 4.3 g (you can adjust this), and Prior 4-day weight gain (g) is slowing growth by about 3.4 g.",
+  "disclaimer": "Decision-support only: recommendations are model counterfactuals within the observed Trial 1 range, not proven causal effects or automatic greenhouse control. Validate with controlled experiments before operational changes."
+}

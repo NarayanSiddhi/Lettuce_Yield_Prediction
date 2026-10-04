@@ -1,0 +1,8 @@
+feature_set,model,split,n_features,n_rows,mae_g,rmse_g,r2,day_median_mae_g
+full,MeanBaseline,lopo,294,79,58.3826,69.9831,-0.001542,58.5614
+full,Ridge,lopo,294,79,6.0869,9.0743,0.983161,1.1227
+full,ElasticNet,lopo,294,79,6.3074,9.3953,0.981949,1.1370
+full,SVR-RBF,lopo,294,79,13.7672,24.0187,0.882027,12.3982
+full,RandomForest,lopo,294,79,5.3389,8.3818,0.985633,1.0494
+full,GradBoost,lopo,294,79,6.1357,9.0420,0.983281,1.9467
+full,XGBoost,lopo,294,79,6.1904,10.1196,0.979058,1.1573

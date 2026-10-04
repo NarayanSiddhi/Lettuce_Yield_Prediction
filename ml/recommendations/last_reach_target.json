@@ -1,0 +1,211 @@
+{
+  "query": "reach_target",
+  "plant_id": 5,
+  "day_t": 16,
+  "target_fw_g": 100.0,
+  "current_fw_g": 36.78,
+  "baseline_predicted_fw_g": 73.18,
+  "recommended_predicted_fw_g": 93.69,
+  "gap_to_target_g": -6.31,
+  "recommendations": [
+    {
+      "feature": "nutrient_ec_us_cm_mean_wmean",
+      "name": "Nutrient EC (\u00b5S/cm)",
+      "from": 1699.411,
+      "to": 2112.31,
+      "observed_p50": 1550.518
+    },
+    {
+      "feature": "env_night_air_temp_c_mean_wmean",
+      "name": "Night air temperature (\u00b0C)",
+      "from": 21.509,
+      "to": 20.28,
+      "observed_p50": 21.445
+    }
+  ],
+  "feasibility_for_4d": {
+    "level": "optimistic",
+    "gain_needed_from_today_g": 63.22,
+    "gap_after_model_4d_pred_g": 26.82,
+    "historical_4d_gain_p50_g": 15.5,
+    "historical_4d_gain_p95_g": 77.65,
+    "model_4d_close_within_error": false,
+    "message": "Needing +63 g in 4d is high vs usual growth (past p95 4-day gain \u2248 +78 g). Treat 4-day hit as optimistic."
+  },
+  "within_typical_error": true,
+  "timeline_current_settings": {
+    "already_at_or_above": false,
+    "days_until_target": 6.9,
+    "reach_on_approx_dat": 22.9,
+    "path": [
+      {
+        "from_day": 16,
+        "to_day": 17,
+        "fw_start_g": 36.78,
+        "fw_pred_end_g": 42.21,
+        "gain_g": 5.43
+      },
+      {
+        "from_day": 17,
+        "to_day": 18,
+        "fw_start_g": 42.21,
+        "fw_pred_end_g": 49.21,
+        "gain_g": 7.0
+      },
+      {
+        "from_day": 18,
+        "to_day": 19,
+        "fw_start_g": 49.21,
+        "fw_pred_end_g": 57.28,
+        "gain_g": 8.08
+      },
+      {
+        "from_day": 19,
+        "to_day": 20,
+        "fw_start_g": 57.28,
+        "fw_pred_end_g": 66.03,
+        "gain_g": 8.75
+      },
+      {
+        "from_day": 20,
+        "to_day": 21,
+        "fw_start_g": 66.03,
+        "fw_pred_end_g": 76.14,
+        "gain_g": 10.1
+      },
+      {
+        "from_day": 21,
+        "to_day": 22,
+        "fw_start_g": 76.14,
+        "fw_pred_end_g": 87.78,
+        "gain_g": 11.64
+      },
+      {
+        "from_day": 22,
+        "to_day": 23,
+        "fw_start_g": 87.78,
+        "fw_pred_end_g": 100.93,
+        "gain_g": 13.16
+      }
+    ],
+    "reached": true,
+    "roll_mode": "daily_ar"
+  },
+  "timeline_recommended_settings": {
+    "already_at_or_above": false,
+    "days_until_target": 6.0,
+    "reach_on_approx_dat": 22.0,
+    "path": [
+      {
+        "from_day": 16,
+        "to_day": 17,
+        "fw_start_g": 36.78,
+        "fw_pred_end_g": 43.21,
+        "gain_g": 6.43
+      },
+      {
+        "from_day": 17,
+        "to_day": 18,
+        "fw_start_g": 43.21,
+        "fw_pred_end_g": 52.04,
+        "gain_g": 8.82
+      },
+      {
+        "from_day": 18,
+        "to_day": 19,
+        "fw_start_g": 52.04,
+        "fw_pred_end_g": 62.26,
+        "gain_g": 10.22
+      },
+      {
+        "from_day": 19,
+        "to_day": 20,
+        "fw_start_g": 62.26,
+        "fw_pred_end_g": 73.18,
+        "gain_g": 10.92
+      },
+      {
+        "from_day": 20,
+        "to_day": 21,
+        "fw_start_g": 73.18,
+        "fw_pred_end_g": 85.81,
+        "gain_g": 12.63
+      },
+      {
+        "from_day": 21,
+        "to_day": 22,
+        "fw_start_g": 85.81,
+        "fw_pred_end_g": 99.44,
+        "gain_g": 13.63
+      },
+      {
+        "from_day": 22,
+        "to_day": 23,
+        "fw_start_g": 99.44,
+        "fw_pred_end_g": 114.05,
+        "gain_g": 14.6
+      }
+    ],
+    "reached": true,
+    "roll_mode": "daily_ar"
+  },
+  "shap_local": [
+    {
+      "feature": "env_day_vpd_pa_mean_wmean",
+      "name": "Day VPD (Pa)",
+      "shap_g": 4.48,
+      "value": 1408.678,
+      "actionable": true,
+      "pushes": "up",
+      "method": "LinearExplainer"
+    },
+    {
+      "feature": "env_day_humidity_pct_mean_wmean",
+      "name": "Day humidity (%)",
+      "shap_g": 4.25,
+      "value": 49.457,
+      "actionable": true,
+      "pushes": "up",
+      "method": "LinearExplainer"
+    },
+    {
+      "feature": "env_night_air_temp_c_mean_wmean",
+      "name": "Night air temperature (\u00b0C)",
+      "shap_g": -3.33,
+      "value": 21.509,
+      "actionable": true,
+      "pushes": "down",
+      "method": "LinearExplainer"
+    },
+    {
+      "feature": "gain_prev_4d",
+      "name": "Prior 4-day weight gain (g)",
+      "shap_g": -2.86,
+      "value": 11.0,
+      "actionable": false,
+      "pushes": "down",
+      "method": "LinearExplainer"
+    },
+    {
+      "feature": "exp_day_wmean",
+      "name": "Days into grow cycle",
+      "shap_g": 2.69,
+      "value": 14.5,
+      "actionable": false,
+      "pushes": "up",
+      "method": "LinearExplainer"
+    },
+    {
+      "feature": "env_day_air_temp_c_mean_wmean",
+      "name": "Day air temperature (\u00b0C)",
+      "shap_g": -1.92,
+      "value": 22.738,
+      "actionable": true,
+      "pushes": "down",
+      "method": "LinearExplainer"
+    }
+  ],
+  "shap_method": "LinearExplainer",
+  "grower_summary": "Plant 5 is 36.8 g on day 16; your goal is 100 g. For the next weigh-in, try Nutrient EC (\u00b5S/cm) 1699.41\u21922112.31 and Night air temperature (\u00b0C) 21.51\u219220.28; expected weight then moves from about 73.2 g to about 93.7 g. Reaching 100 g in only 4 days looks optimistic versus past growth \u2014 the longer timeline is the safer reading. At current settings, plan on roughly 6.9 days to reach 100 g, or about 6.0 days if you hold the suggested settings. Main reasons right now: Day VPD (Pa) is helping growth by about 4.5 g (you can adjust this) and Day humidity (%) is helping growth by about 4.2 g (you can adjust this).",
+  "disclaimer": "Decision-support only: recommendations are model counterfactuals within the observed Trial 1 range, not proven causal effects or automatic greenhouse control. Validate with controlled experiments before operational changes."
+}

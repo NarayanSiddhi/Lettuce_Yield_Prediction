@@ -1,0 +1,45 @@
+{
+  "horizon_days": 4,
+  "best": {
+    "cup/loo_cup": {
+      "model": "RandomForest",
+      "mae": 4192.600854397517,
+      "r2": 0.7925622031649304,
+      "mae_vs_persist": 1030.2586497347147,
+      "persist_mae": 5222.859504132231,
+      "n_rows": 121
+    },
+    "cup/loo_trial": {
+      "model": "GradBoost",
+      "mae": 6260.778028625126,
+      "r2": 0.5807323894951275,
+      "mae_vs_persist": -1037.918524492895,
+      "persist_mae": 5222.859504132231,
+      "n_rows": 121
+    },
+    "cup/lodo_target_day": {
+      "model": "RandomForest",
+      "mae": 4011.95776809865,
+      "r2": 0.8119418449034294,
+      "mae_vs_persist": 1210.9017360335815,
+      "persist_mae": 5222.859504132231,
+      "n_rows": 121
+    },
+    "tray/loo_trial": {
+      "model": "SVR-RBF",
+      "mae": 72203.2936630383,
+      "r2": -0.16064530886246997,
+      "mae_vs_persist": 30379.346336961695,
+      "persist_mae": 102582.64,
+      "n_rows": 25
+    },
+    "tray/lodo_target_day": {
+      "model": "SVR-RBF",
+      "mae": 74105.0462097634,
+      "r2": -0.16377785429624137,
+      "mae_vs_persist": 28477.5937902366,
+      "persist_mae": 102582.64,
+      "n_rows": 25
+    }
+  }
+}

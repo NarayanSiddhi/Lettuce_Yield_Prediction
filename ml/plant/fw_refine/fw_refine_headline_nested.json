@@ -1,0 +1,15 @@
+{
+  "primary_split": "lodo",
+  "best_pack": "lin_phy",
+  "best_model": "NestedSelect",
+  "mae_pm": "10.33 \u00b1 0.00",
+  "n_features": 41,
+  "tune": true,
+  "log_target": true,
+  "baseline_note": "LOO/LOPO are optimistic; LODO is the Aim 1 headline",
+  "literature": {
+    "take": "Lin canopy+climate traits; FGTD\u2192XGBoost; Aim2 nested LODO",
+    "skip": "Chen/Drees-scale image GANs for FW",
+    "improve": "curated lin_phy + nested select for n=79"
+  }
+}

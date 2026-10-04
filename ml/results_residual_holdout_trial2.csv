@@ -1,0 +1,14 @@
+split,setup,model,mae_g,rmse_g,r2,n_features
+train_trial1_test_trial2,crop_only_holdout,physics,9.2000,12.4309,0.952135,0
+train_trial1_test_trial2,image_raw_holdout,Ridge,76.8505,82.4678,-1.106575,66
+train_trial1_test_trial2,hybrid_residual_holdout,Ridge,9.7590,14.0883,0.938521,66
+train_trial1_test_trial2,image_raw_holdout,ElasticNet,81.9131,88.0998,-1.404132,66
+train_trial1_test_trial2,hybrid_residual_holdout,ElasticNet,11.0125,15.5426,0.925174,66
+train_trial1_test_trial2,image_raw_holdout,SVR-RBF,43.8668,62.0967,-0.194387,66
+train_trial1_test_trial2,hybrid_residual_holdout,SVR-RBF,10.3439,13.9913,0.939365,66
+train_trial1_test_trial2,image_raw_holdout,RandomForest,69.2826,76.5032,-0.812872,66
+train_trial1_test_trial2,hybrid_residual_holdout,RandomForest,9.7586,13.6163,0.942571,66
+train_trial1_test_trial2,image_raw_holdout,GradBoost,89.8307,94.8468,-1.786464,66
+train_trial1_test_trial2,hybrid_residual_holdout,GradBoost,9.6699,12.9905,0.947729,66
+train_trial1_test_trial2,image_raw_holdout,XGBoost,46.5623,65.3025,-0.320894,66
+train_trial1_test_trial2,hybrid_residual_holdout,XGBoost,9.1378,12.4115,0.952285,66

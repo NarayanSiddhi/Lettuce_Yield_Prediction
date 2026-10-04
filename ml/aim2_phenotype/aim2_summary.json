@@ -1,0 +1,41 @@
+{
+  "horizon_days": 4,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "n_pairs": 68,
+  "headline": {
+    "canopy_only": {
+      "model": "RandomForest",
+      "mae_g_mean_pm_sd": "\u2014",
+      "canopy_mae_px_mean_pm_sd": "8241.81 \u00b1 151.86",
+      "consistency_mae_g_mean_pm_sd": "\u2014",
+      "mae_vs_persist_mean": NaN
+    },
+    "direct_fw": {
+      "model": "XGBoost",
+      "mae_g_mean_pm_sd": "37.58 \u00b1 3.48",
+      "canopy_mae_px_mean_pm_sd": "\u2014",
+      "consistency_mae_g_mean_pm_sd": "6.37 \u00b1 1.53",
+      "mae_vs_persist_mean": -6.999610228145821
+    },
+    "persist": {
+      "model": "Persist",
+      "mae_g_mean_pm_sd": "30.59 \u00b1 0.00",
+      "canopy_mae_px_mean_pm_sd": "10135.65 \u00b1 0.00",
+      "consistency_mae_g_mean_pm_sd": "\u2014",
+      "mae_vs_persist_mean": 0.0
+    },
+    "phenotype_bridge": {
+      "model": "XGB\u2190RandomForest",
+      "mae_g_mean_pm_sd": "37.52 \u00b1 0.67",
+      "canopy_mae_px_mean_pm_sd": "8241.81 \u00b1 151.86",
+      "consistency_mae_g_mean_pm_sd": "6.37 \u00b1 1.53",
+      "mae_vs_persist_mean": -6.93553049468994
+    }
+  }
+}

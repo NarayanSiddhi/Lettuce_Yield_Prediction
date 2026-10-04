@@ -1,0 +1,40 @@
+
+════════════════════════════════════════════════════════════
+  GOAL WEIGHT — changes for next weigh-in + when you'll get there
+════════════════════════════════════════════════════════════
+  Plant ID             : 5   (day 16)
+  Weight today         : 36.8 g
+  Your goal            : 100 g
+
+  --- A) Next 4 days only ---
+  Expected in +4d (no change) : 73.2 g
+  Expected in +4d (w/ tweaks): 93.7 g
+  Realism of hitting goal in 4d: optimistic
+    Needing +63 g in 4d is high vs usual growth (past p95 4-day gain ≈ +78 g). Treat 4-day hit as optimistic.
+
+  Suggested setting changes:
+    • Nutrient EC (µS/cm): 1699.41 → 2112.31   (past median 1550.52)
+    • Night air temperature (°C): 21.51 → 20.28   (past median 21.45)
+
+  --- B) After how many days ≈ goal? ---
+  Current settings : ≈ 6.9 days (around day 22.9)
+  With suggestions : ≈ 6.0 days (around day 22.0)
+  Growth path (current settings) (day-by-day):
+    day 16→17: 36.8 → 42.2 g
+    day 17→18: 42.2 → 49.2 g
+    day 18→19: 49.2 → 57.3 g
+    day 19→20: 57.3 → 66.0 g
+    day 20→21: 66.0 → 76.1 g
+    day 21→22: 76.1 → 87.8 g
+    day 22→23: 87.8 → 100.9 g
+
+  What’s helping or slowing this plant:
+    ↑ helping: Day VPD (Pa) (~4.5 g)  (adjustable)
+    ↑ helping: Day humidity (%) (~4.2 g)  (adjustable)
+    ↓ slowing: Night air temperature (°C) (~3.3 g)  (adjustable)
+    ↓ slowing: Prior 4-day weight gain (g) (~2.9 g)
+    ↑ helping: Days into grow cycle (~2.7 g)
+
+  Summary: Plant 5 is 36.8 g on day 16; your goal is 100 g. For the next weigh-in, try Nutrient EC (µS/cm) 1699.41→2112.31 and Night air temperature (°C) 21.51→20.28; expected weight then moves from about 73.2 g to about 93.7 g. Reaching 100 g in only 4 days looks optimistic versus past growth — the longer timeline is the safer reading. At current settings, plan on roughly 6.9 days to reach 100 g, or about 6.0 days if you hold the suggested settings. Main reasons right now: Day VPD (Pa) is helping growth by about 4.5 g (you can adjust this) and Day humidity (%) is helping growth by about 4.2 g (you can adjust this).
+
+────────────────────────────────────────────────────────────

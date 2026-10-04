@@ -1,0 +1,17 @@
+trial,DAT,date,observed_median_fw_g,target_low_g,target_mid_g,target_high_g,label_source
+trial1,0,2025-10-14,4.7,3.0,3.5,4.0,Lettuce_model/data/observed_fresh_weight.csv
+trial1,4,2025-10-18,13.1,7.5,8.8,10.1,Lettuce_model/data/observed_fresh_weight.csv
+trial1,8,2025-10-22,19.8,18.9,22.2,25.5,Lettuce_model/data/observed_fresh_weight.csv
+trial1,12,2025-10-26,27.3,47.6,56.0,64.4,Lettuce_model/data/observed_fresh_weight.csv
+trial1,16,2025-10-30,42.3,88.9,98.8,108.6,Lettuce_model/data/observed_fresh_weight.csv
+trial1,20,2025-11-03,80.8,127.4,141.5,155.7,Lettuce_model/data/observed_fresh_weight.csv
+trial1,24,2025-11-07,139.3,165.8,184.3,202.7,Lettuce_model/data/observed_fresh_weight.csv
+trial1,28,2025-11-11,219.8,211.1,227.0,242.9,Lettuce_model/data/observed_fresh_weight.csv
+trial2,0,2026-01-19,4.7,3.0,3.5,4.0,Lettuce_model/data/observed_fresh_weight.csv
+trial2,4,2026-01-23,17.8,7.5,8.8,10.1,Lettuce_model/data/observed_fresh_weight.csv
+trial2,8,2026-01-27,20.8,18.9,22.2,25.5,Lettuce_model/data/observed_fresh_weight.csv
+trial2,12,2026-01-31,26.3,47.6,56.0,64.4,Lettuce_model/data/observed_fresh_weight.csv
+trial2,16,2026-02-04,41.8,88.9,98.8,108.6,Lettuce_model/data/observed_fresh_weight.csv
+trial2,20,2026-02-08,70.8,127.4,141.5,155.7,Lettuce_model/data/observed_fresh_weight.csv
+trial2,24,2026-02-12,119.3,165.8,184.3,202.7,Lettuce_model/data/observed_fresh_weight.csv
+trial2,28,2026-02-16,179.8,211.1,227.0,242.9,Lettuce_model/data/observed_fresh_weight.csv

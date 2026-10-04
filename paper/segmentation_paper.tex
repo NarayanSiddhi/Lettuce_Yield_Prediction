@@ -1,0 +1,60 @@
+% =============================================================================
+% Standalone compilable draft — Lettuce Yield Prediction (Segmentation Sections)
+% Compile:  pdflatex segmentation_paper && bibtex segmentation_paper && pdflatex segmentation_paper && pdflatex segmentation_paper
+% Or use latexmk: latexmk -pdf segmentation_paper.tex
+% =============================================================================
+
+\documentclass[11pt,a4paper,twocolumn]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{authblk}
+
+% Two-column tuning (optional)
+\setlength{\columnsep}{0.22in}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\title{Comparative Segmentation and Feature Extraction for\\
+Hydroponic Lettuce Fresh-Weight Prediction in Grow-Tent Timelapse Imagery}
+
+\author[1]{Your Name}
+\author[1]{Co-Author}
+\affil[1]{Department, University, Country}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We compare three literature-backed segmentation approaches---ExGR with Otsu
+thresholding, the Segment Anything Model (SAM), and FastSAM---on matched
+grow-tent timelapse frames from two hydroponic lettuce trials. All methods share
+identical post-processing for fair evaluation. On 53 trial-day frames,
+FastSAM achieves the highest canopy coverage (12.9\%), near-SAM plant-detection
+counts, and strong FastSAM--SAM mask agreement (Dice $= 0.603$) at approximately
+three times lower latency than SAM. ExGR is fastest but captures only 6.1\%
+canopy coverage. Based on quantitative and qualitative evidence, FastSAM is
+selected for downstream fresh-weight feature extraction and yield modelling.
+\end{abstract}
+
+\noindent\textbf{Keywords:} lettuce yield prediction; hydroponic agriculture;
+instance segmentation; FastSAM; SAM; ExGR; timelapse phenotyping.
+
+\input{sections_segmentation}
+
+\bibliographystyle{plain}
+\bibliography{references_segmentation}
+
+\end{document}
